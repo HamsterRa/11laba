@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace _11laba
 {
-    public partial class FormRegistration : Form
+    public partial class Cabinet : Form
     {
-        public FormRegistration()
+        public Cabinet()
         {
             InitializeComponent();
-        }
-
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void checkbutton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

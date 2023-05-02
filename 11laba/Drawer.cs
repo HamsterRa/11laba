@@ -15,5 +15,10 @@ namespace _11laba
         public string PhoneNumber { get; set; } = string.Empty;
         public string ArtDirection { get; set; } = string.Empty;
         public DateTime DateFirstPublication { get; set; }
+        public string Password
+        {
+            get => Password;
+            set => new Hashing(Password).ToHash();
+        }
     }
 }

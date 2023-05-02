@@ -13,7 +13,7 @@ namespace _11laba
 
         private void registarionButton_Click(object sender, EventArgs e)
         {
-
+            new FormRegistration().ShowDialog();
         }
 
         private void closebutton_Click(object sender, EventArgs e)

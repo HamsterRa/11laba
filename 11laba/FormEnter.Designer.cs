@@ -31,7 +31,7 @@
             label1 = new Label();
             groupBox1 = new GroupBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            passwordBox = new TextBox();
             label2 = new Label();
             emailBox = new TextBox();
             closeButton = new Button();
@@ -52,7 +52,7 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(passwordBox);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(emailBox);
             groupBox1.Controls.Add(closeButton);
@@ -73,12 +73,12 @@
             label3.TabIndex = 5;
             label3.Text = "Пароль";
             // 
-            // textBox1
+            // passwordBox
             // 
-            textBox1.Location = new Point(6, 95);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 23);
-            textBox1.TabIndex = 4;
+            passwordBox.Location = new Point(6, 95);
+            passwordBox.Name = "passwordBox";
+            passwordBox.Size = new Size(240, 23);
+            passwordBox.TabIndex = 4;
             // 
             // label2
             // 
@@ -142,7 +142,7 @@
         private Button closeButton;
         private Button checkbutton;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox passwordBox;
         private Label label2;
         private TextBox emailBox;
     }
