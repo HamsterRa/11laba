@@ -36,11 +36,11 @@
             label8 = new Label();
             dateTimePicker2 = new DateTimePicker();
             label7 = new Label();
-            textBox1 = new TextBox();
+            phoneBox = new TextBox();
             label6 = new Label();
             dateTimePicker1 = new DateTimePicker();
             label4 = new Label();
-            SurnameBox = new TextBox();
+            surnameBox = new TextBox();
             label5 = new Label();
             nameBox = new TextBox();
             label3 = new Label();
@@ -62,11 +62,11 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(dateTimePicker2);
             groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(phoneBox);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(SurnameBox);
+            groupBox1.Controls.Add(surnameBox);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(nameBox);
             groupBox1.Controls.Add(label3);
@@ -150,12 +150,12 @@
             label7.TabIndex = 13;
             label7.Text = "Номер телефона";
             // 
-            // textBox1
+            // phoneBox
             // 
-            textBox1.Location = new Point(6, 250);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(199, 23);
-            textBox1.TabIndex = 12;
+            phoneBox.Location = new Point(6, 250);
+            phoneBox.Name = "phoneBox";
+            phoneBox.Size = new Size(199, 23);
+            phoneBox.TabIndex = 12;
             // 
             // label6
             // 
@@ -184,12 +184,12 @@
             label4.TabIndex = 9;
             label4.Text = "Фамилия";
             // 
-            // SurnameBox
+            // surnameBox
             // 
-            SurnameBox.Location = new Point(6, 91);
-            SurnameBox.Name = "SurnameBox";
-            SurnameBox.Size = new Size(199, 23);
-            SurnameBox.TabIndex = 8;
+            surnameBox.Location = new Point(6, 91);
+            surnameBox.Name = "surnameBox";
+            surnameBox.Size = new Size(199, 23);
+            surnameBox.TabIndex = 8;
             // 
             // label5
             // 
@@ -293,7 +293,7 @@
 
         private GroupBox groupBox1;
         private Label label4;
-        private TextBox SurnameBox;
+        private TextBox surnameBox;
         private Label label5;
         private TextBox nameBox;
         private Label label3;
@@ -308,7 +308,7 @@
         private Label label8;
         private DateTimePicker dateTimePicker2;
         private Label label7;
-        private TextBox textBox1;
+        private TextBox phoneBox;
         private RadioButton radioButton3;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
