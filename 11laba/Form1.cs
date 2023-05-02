@@ -6,5 +6,21 @@ namespace _11laba
         {
             InitializeComponent();
         }
+        private void enterButton_Click(object sender, EventArgs e)
+        {
+            new FormEnter().ShowDialog();
+        }
+
+        private void registarionButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closebutton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
     }
 }
