@@ -26,5 +26,17 @@ namespace _11laba
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(emailBox.Text == "")
+            {
+                MessageBox.Show("Введите почту");
+                return;
+            }
+            string password = new GeneratePassword(9).Generate();
+            new EmailSender(emailBox.Text).SendMessage($"Новый пароль: {password}");
+
+        }
     }
 }

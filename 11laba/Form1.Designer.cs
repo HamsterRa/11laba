@@ -37,9 +37,10 @@
             // registarionButton
             // 
             registarionButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            registarionButton.Location = new Point(119, 169);
+            registarionButton.Location = new Point(170, 282);
+            registarionButton.Margin = new Padding(4, 5, 4, 5);
             registarionButton.Name = "registarionButton";
-            registarionButton.Size = new Size(247, 54);
+            registarionButton.Size = new Size(413, 90);
             registarionButton.TabIndex = 2;
             registarionButton.Text = "Зарегистрироваться";
             registarionButton.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // enterButton
             // 
             enterButton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            enterButton.Location = new Point(119, 96);
+            enterButton.Location = new Point(170, 160);
+            enterButton.Margin = new Padding(4, 5, 4, 5);
             enterButton.Name = "enterButton";
-            enterButton.Size = new Size(247, 54);
+            enterButton.Size = new Size(413, 90);
             enterButton.TabIndex = 1;
             enterButton.Text = "Войти";
             enterButton.UseVisualStyleBackColor = true;
@@ -60,18 +62,20 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(45, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(484, 30);
+            label1.Size = new Size(705, 45);
             label1.TabIndex = 2;
             label1.Text = "Добро пожаловать в сообщество художников";
             // 
             // closebutton
             // 
             closebutton.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            closebutton.Location = new Point(119, 244);
+            closebutton.Location = new Point(170, 407);
+            closebutton.Margin = new Padding(4, 5, 4, 5);
             closebutton.Name = "closebutton";
-            closebutton.Size = new Size(247, 54);
+            closebutton.Size = new Size(413, 90);
             closebutton.TabIndex = 3;
             closebutton.Text = "Выход";
             closebutton.UseVisualStyleBackColor = true;
@@ -79,15 +83,16 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(510, 365);
+            ClientSize = new Size(795, 608);
             ControlBox = false;
             Controls.Add(closebutton);
             Controls.Add(label1);
             Controls.Add(enterButton);
             Controls.Add(registarionButton);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";

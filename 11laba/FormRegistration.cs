@@ -27,9 +27,17 @@ namespace _11laba
         {
             using (ApplicationDrawers db = new())
             {
-                db.Add(new Drawer(nameBox.Text, surnameBox.Text, dateTimePicker1.Value, emailBox.Text, phoneBox.Text, WhyRadioButton(),dateTimePicker2.Value,passwordBox.Text));
+                foreach (Drawer oneDrawer in  db.Drawers)
+                {
+                    if(oneDrawer.Email == emailBox.Text)
+                    {
+                        MessageBox.Show("Такой email уже существует");
+                        return;
+                    }
+                }
+                db.Drawers.Add(new Drawer(nameBox.Text, surnameBox.Text, dateTimePicker1.Value, emailBox.Text, phoneBox.Text, WhyRadioButton(),dateTimePicker2.Value,passwordBox.Text));
                 db.SaveChanges();
-                MessageBox.Show("Вы успешно зарегистрировались");
+                new EmailSender(emailBox.Text).SendMessage("Вы успешно зарегистрировались");
                 Close();
             }
         }

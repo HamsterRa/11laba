@@ -12,9 +12,26 @@ namespace _11laba
 {
     public partial class Cabinet : Form
     {
-        public Cabinet()
+        public Cabinet(int id)
         {
             InitializeComponent();
+            using (ApplicationDrawers db = new())
+            {
+                foreach (Drawer oneDrawer in db.Drawers)
+                {
+                    if (oneDrawer.Id == id)
+                    {
+                        name.Text = oneDrawer.Name;
+                        surname.Text = oneDrawer.Surname;
+                        Email.Text = oneDrawer.Email;
+                        datefirst.Text = oneDrawer.DateFirstPublication.Date.ToString();
+                        birthday.Text = oneDrawer.DateOfBirthday.Date.ToString();
+                        phone.Text = oneDrawer.PhoneNumber;
+                        dictionary.Text = oneDrawer.ArtDirection;
+                        break;
+                    }
+                }
+            }
         }
 
         private void closeButton_Click(object sender, EventArgs e)

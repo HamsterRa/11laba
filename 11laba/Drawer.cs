@@ -16,11 +16,7 @@ namespace _11laba
         public string PhoneNumber { get; set; } = string.Empty;
         public string ArtDirection { get; set; } = string.Empty;
         public DateTime DateFirstPublication { get; set; }
-        public string Password
-        {
-            get => Password;
-            set => new Hashing(Password).ToHash();
-        }
+        public string Password {get; set;}
         public Drawer(string name, string surname, DateTime dateOfBirthday, string email, string phoneNumber, string artDirection, DateTime dateFirstPublication, string password)
         {
             Name = name;
@@ -30,7 +26,7 @@ namespace _11laba
             PhoneNumber = phoneNumber;
             ArtDirection = artDirection;
             DateFirstPublication = dateFirstPublication;
-            Password = password;
+            Password = new Hashing(password).ToHash();
         }
     }
 }
