@@ -26,7 +26,7 @@ namespace _11laba
             PhoneNumber = phoneNumber;
             ArtDirection = artDirection;
             DateFirstPublication = dateFirstPublication;
-            Password = new Hashing(password).ToHash();
+            Password = password;
         }
     }
 }

@@ -25,6 +25,7 @@ namespace _11laba
 
         private void checkbutton_Click(object sender, EventArgs e)
         {
+            groupBox1.Enabled = false;
             using (ApplicationDrawers db = new())
             {
                 foreach (Drawer oneDrawer in  db.Drawers)
@@ -32,12 +33,14 @@ namespace _11laba
                     if(oneDrawer.Email == emailBox.Text)
                     {
                         MessageBox.Show("Такой email уже существует");
+                        groupBox1.Enabled = true;
                         return;
                     }
                 }
-                db.Drawers.Add(new Drawer(nameBox.Text, surnameBox.Text, dateTimePicker1.Value, emailBox.Text, phoneBox.Text, WhyRadioButton(),dateTimePicker2.Value,passwordBox.Text));
+                db.Drawers.Add(new Drawer(nameBox.Text, surnameBox.Text, dateTimePicker1.Value, emailBox.Text, phoneBox.Text, WhyRadioButton(),dateTimePicker2.Value,new Hashing(passwordBox.Text).ToHash()));
                 db.SaveChanges();
                 new EmailSender(emailBox.Text).SendMessage("Вы успешно зарегистрировались");
+                groupBox1.Enabled = true;
                 Close();
             }
         }

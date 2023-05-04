@@ -41,7 +41,7 @@
             birthday = new Label();
             surname = new Label();
             name = new Label();
-            label2 = new Label();
+            emaillabel = new Label();
             Email = new Label();
             closeButton = new Button();
             SuspendLayout();
@@ -127,7 +127,7 @@
             // 
             dictionary.AutoSize = true;
             dictionary.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dictionary.Location = new Point(280, 283);
+            dictionary.Location = new Point(301, 285);
             dictionary.Margin = new Padding(4, 0, 4, 5);
             dictionary.Name = "dictionary";
             dictionary.Size = new Size(0, 32);
@@ -183,21 +183,21 @@
             name.Size = new Size(0, 32);
             name.TabIndex = 26;
             // 
-            // label2
+            // emaillabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(94, 323);
-            label2.Margin = new Padding(4, 0, 4, 5);
-            label2.Name = "label2";
-            label2.Size = new Size(0, 32);
-            label2.TabIndex = 33;
+            emaillabel.AutoSize = true;
+            emaillabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            emaillabel.Location = new Point(92, 320);
+            emaillabel.Margin = new Padding(4, 0, 4, 5);
+            emaillabel.Name = "emaillabel";
+            emaillabel.Size = new Size(0, 32);
+            emaillabel.TabIndex = 33;
             // 
             // Email
             // 
             Email.AutoSize = true;
             Email.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Email.Location = new Point(17, 323);
+            Email.Location = new Point(17, 320);
             Email.Margin = new Padding(4, 0, 4, 5);
             Email.Name = "Email";
             Email.Size = new Size(71, 32);
@@ -223,7 +223,7 @@
             ClientSize = new Size(523, 485);
             ControlBox = false;
             Controls.Add(closeButton);
-            Controls.Add(label2);
+            Controls.Add(emaillabel);
             Controls.Add(Email);
             Controls.Add(dictionary);
             Controls.Add(datefirst);
@@ -260,7 +260,7 @@
         private Label birthday;
         private Label surname;
         private Label name;
-        private Label label2;
+        private Label emaillabel;
         private Label Email;
         private Button closeButton;
     }

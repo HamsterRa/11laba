@@ -23,7 +23,7 @@ namespace _11laba
                     {
                         name.Text = oneDrawer.Name;
                         surname.Text = oneDrawer.Surname;
-                        Email.Text = oneDrawer.Email;
+                        emaillabel.Text = oneDrawer.Email;
                         datefirst.Text = oneDrawer.DateFirstPublication.Date.ToString();
                         birthday.Text = oneDrawer.DateOfBirthday.Date.ToString();
                         phone.Text = oneDrawer.PhoneNumber;
